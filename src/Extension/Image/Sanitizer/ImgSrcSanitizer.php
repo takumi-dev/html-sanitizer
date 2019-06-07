@@ -33,7 +33,7 @@ class ImgSrcSanitizer
 
     public function sanitize(?string $input): ?string
     {
-        $allowedSchemes = ['http', 'https'];
+        $allowedSchemes = [null, 'http', 'https'];
         $allowedHosts = $this->allowedHosts;
 
         if ($this->allowDataUri) {
