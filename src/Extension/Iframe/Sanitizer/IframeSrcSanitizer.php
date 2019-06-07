@@ -31,6 +31,6 @@ class IframeSrcSanitizer
 
     public function sanitize(?string $input): ?string
     {
-        return $this->sanitizeUrl($input, ['http', 'https'], $this->allowedHosts, $this->forceHttps);
+        return $this->sanitizeUrl($input, [null, 'http', 'https'], $this->allowedHosts, $this->forceHttps);
     }
 }
