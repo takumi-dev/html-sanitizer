@@ -14,7 +14,7 @@ namespace HtmlSanitizer\Extension\Form\NodeVisitor;
 use HtmlSanitizer\Extension\Form\Node\FormNode;
 use HtmlSanitizer\Model\Cursor;
 use HtmlSanitizer\Node\NodeInterface;
-use HtmlSanitizer\Extension\Form\Sanitizer\FormSrcSanitizer;
+use HtmlSanitizer\Extension\Form\Sanitizer\FormActionSanitizer;
 use HtmlSanitizer\Visitor\AbstractNodeVisitor;
 use HtmlSanitizer\Visitor\HasChildrenNodeVisitorTrait;
 use HtmlSanitizer\Visitor\NamedNodeVisitorInterface;
