@@ -50,6 +50,13 @@ class BasicExtension implements ExtensionInterface
             'strong' => new NodeVisitor\StrongNodeVisitor($config['tags']['strong'] ?? []),
             'sub' => new NodeVisitor\SubNodeVisitor($config['tags']['sub'] ?? []),
             'sup' => new NodeVisitor\SupNodeVisitor($config['tags']['sup'] ?? []),
+            'article' => new NodeVisitor\ArticleNodeVisitor($config['tags']['article'] ?? []),
+            'aside' => new NodeVisitor\AsideNodeVisitor($config['tags']['aside'] ?? []),
+            'footer' => new NodeVisitor\FooterNodeVisitor($config['tags']['footer'] ?? []),
+            'header' => new NodeVisitor\HeaderNodeVisitor($config['tags']['header'] ?? []),
+            'main' => new NodeVisitor\MainNodeVisitor($config['tags']['main'] ?? []),
+            'nav' => new NodeVisitor\NavNodeVisitor($config['tags']['nav'] ?? []),
+            'section' => new NodeVisitor\SectionNodeVisitor($config['tags']['section'] ?? []),
         ];
     }
 }
