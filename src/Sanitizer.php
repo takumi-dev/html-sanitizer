@@ -16,6 +16,7 @@ use HtmlSanitizer\Extension\Code\CodeExtension;
 use HtmlSanitizer\Extension\Details\DetailsExtension;
 use HtmlSanitizer\Extension\Extra\ExtraExtension;
 use HtmlSanitizer\Extension\Iframe\IframeExtension;
+use HtmlSanitizer\Extension\Form\FormExtension;
 use HtmlSanitizer\Extension\Image\ImageExtension;
 use HtmlSanitizer\Extension\Listing\ListExtension;
 use HtmlSanitizer\Extension\Table\TableExtension;
@@ -74,6 +75,7 @@ class Sanitizer implements SanitizerInterface
         $builder->registerExtension(new CodeExtension());
         $builder->registerExtension(new TableExtension());
         $builder->registerExtension(new IframeExtension());
+        $builder->registerExtension(new FormExtension());
         $builder->registerExtension(new DetailsExtension());
         $builder->registerExtension(new ExtraExtension());
 
