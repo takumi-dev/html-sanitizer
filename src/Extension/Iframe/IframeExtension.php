@@ -29,6 +29,9 @@ class IframeExtension implements ExtensionInterface
     {
         return [
             'iframe' => new NodeVisitor\IframeNodeVisitor($config['tags']['iframe'] ?? []),
+            'video' => new NodeVisitor\VideoNodeVisitor($config['tags']['video'] ?? []),
+            'source' => new NodeVisitor\SourceNodeVisitor($config['tags']['source'] ?? []),
+            'embed' => new NodeVisitor\EmbedNodeVisitor($config['tags']['embed'] ?? []),
         ];
     }
 }
