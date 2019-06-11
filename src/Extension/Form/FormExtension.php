@@ -30,6 +30,7 @@ class FormExtension implements ExtensionInterface
         return [
             'form' => new NodeVisitor\FormNodeVisitor($config['tags']['form'] ?? []),
             'fieldset' => new NodeVisitor\FieldsetNodeVisitor($config['tags']['fieldset'] ?? []),
+            'label' => new NodeVisitor\LabelNodeVisitor($config['tags']['label'] ?? []),
             'input' => new NodeVisitor\InputNodeVisitor($config['tags']['input'] ?? []),
             'textarea' => new NodeVisitor\TextareaNodeVisitor($config['tags']['textarea'] ?? []),
             'select' => new NodeVisitor\SelectNodeVisitor($config['tags']['select'] ?? []),
