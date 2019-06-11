@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace HtmlSanitizer\Extension\Iframe;
+namespace HtmlSanitizer\Extension\Form;
 
 use HtmlSanitizer\Extension\ExtensionInterface;
 
