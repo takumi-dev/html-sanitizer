@@ -19,12 +19,12 @@ use HtmlSanitizer\Node\HasChildrenTrait;
  *
  * @final
  */
-class LabelNode extends AbstractTagNode
+class OptGroupNode extends AbstractTagNode
 {
     use HasChildrenTrait;
 
     public function getTagName(): string
     {
-        return 'label';
+        return 'optgroup';
     }
 }
