@@ -15,7 +15,7 @@ use HtmlSanitizer\Model\Cursor;
 use HtmlSanitizer\Extension\Form\Node\InputNode;
 use HtmlSanitizer\Node\NodeInterface;
 use HtmlSanitizer\Visitor\AbstractNodeVisitor;
-use HtmlSanitizer\Visitor\HasChildrenNodeVisitorTrait;
+use HtmlSanitizer\Visitor\IsChildlessTagVisitorTrait;
 use HtmlSanitizer\Visitor\NamedNodeVisitorInterface;
 
 /**
@@ -25,7 +25,7 @@ use HtmlSanitizer\Visitor\NamedNodeVisitorInterface;
  */
 class InputNodeVisitor extends AbstractNodeVisitor implements NamedNodeVisitorInterface
 {
-    use HasChildrenNodeVisitorTrait;
+    use IsChildlessTagVisitorTrait;
 
     protected function getDomNodeName(): string
     {
