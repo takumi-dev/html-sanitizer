@@ -12,7 +12,7 @@
 namespace HtmlSanitizer\Extension\Form\Node;
 
 use HtmlSanitizer\Node\AbstractTagNode;
-use HtmlSanitizer\Node\HasChildrenTrait;
+use HtmlSanitizer\Node\IsChildlessTrait;
 
 /**
  * @author Titouan Galopin <galopintitouan@gmail.com>
@@ -21,7 +21,7 @@ use HtmlSanitizer\Node\HasChildrenTrait;
  */
 class InputNode extends AbstractTagNode
 {
-    use HasChildrenTrait;
+    use IsChildlessTrait;
 
     public function getTagName(): string
     {
